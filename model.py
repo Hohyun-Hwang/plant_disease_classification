@@ -37,7 +37,6 @@ class CNN(nn.Module):
 
         output = self.flatten(output)
         output = self.drop_out(output)
-        # import ipdb;ipdb.set_trace()
         output = self.fc1(output)
         output = self.fc1_bn(output)
         output = self.relu(output)
@@ -54,8 +53,6 @@ class CNN(nn.Module):
 
 
 if __name__ == "__main__":
-    # Caution! If don't have cuda device, using CNN(). Not CNN().cuda().
-    # Also CustomMLP have to upper line.
     graphic_device = 'gpu'
     if graphic_device == 'cpu':
         summary(CNN(), (3, 256, 256), device=graphic_device)

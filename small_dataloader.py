@@ -3,7 +3,22 @@ from glob import glob  # for open lots of file
 from PIL import Image  # for open image file
 from torch.utils.data.dataset import Dataset  # for custom dataloader
 import torch
-
+"""
+* Folder structure
+=========
+-Dataset
+|--train
+|---Apple___Apple_scab
+|---Apple___Black_rot
+|---Apple___Cedar_apple_rust
+|---Apple___healthy
+|--test
+|---Apple___Apple_scab
+|---Apple___Black_rot
+|---Apple___Cedar_apple_rust
+|---Apple___healthy
+=========
+"""
 class plant_image(Dataset):
 
     def __init__(self, data_dir, transform):

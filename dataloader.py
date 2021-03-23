@@ -9,26 +9,20 @@ import torch
 =========
 -Dataset
 |--train
+|---Apple___Apple_scab
+|---Apple___Black_rot
+|---Apple___Cedar_apple_rust
+|---Apple___healthy
+|---Blueberry___healthy
+|---...
 |--test
+|---Apple___Apple_scab
+|---Apple___Black_rot
+|---Apple___Cedar_apple_rust
+|---Apple___healthy
+|---Blueberry___healthy
+|---...
 =========
-
-* How to pick up label information
-
-target label = def, ok
-file name = cast_def_0_0.jpeg
-diretory = '\\dataset\\train\\cast_def_0_0.jpg'
-diretory.split('\\')
->>> [',,'dataset,,,train,,,cast_def_0_0.jpg,]
-
-label = diretory.split('\\')[-1].split("_")[1]
-print(label)
->>>'def'
-
-* What do transform work to do?
-=> Before training, to adjust augmentation
-,some data have to transform(like normalize, flip, rotation, etc.)
-=> Pytorch supply transform. That's why made of self.transform 
-
 """
 
 

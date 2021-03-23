@@ -39,7 +39,7 @@ def train(model, trn_loader, device, criterion, optimizer):
     trn_loss_sum = 0
     trn_loss_list = []
     trn_acc_list = []
-    for i, (data, target) in enumerate(tqdm(trn_loader)):  # i means how many
+    for i, (data, target) in enumerate(tqdm(trn_loader)):
         optimizer.zero_grad()  # pytorch has gradient before nodes
         data = data.to(device)
         output = model(data)  # input data in model

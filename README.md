@@ -1,1 +1,30 @@
 # plant_disease_classification
+
+----------------------
+
+** Contributor
+JongHwan Park : bomebug15@ds.seoultech.ac.kr
+HoHyeun Hwang : hhhwang94@naver.com   
+JuHee Han : fgtr153@ds.seoultech.ac.kr
+
+For Plant Diseases Classification , We use data from https://www.kaggle.com/vipoooool/new-plant-diseases-dataset
+
+We used two datasets, a small dataset consisting only of apple disease, and the entire dataset did not name it separately. 
+If you want to train or demo on small dataset, use 
+```
+small_main.py, small_model.py, small_dataloader.py
+```
+
+## How to Use
+-----------------
+```
+python small_main.py or main.py --batch_size(int) --model[efficientnet,resnet, CNN] --device[cpu, gpu] --epoch(int) --mode[train,visualization]
+```
+--------------
+
+## Model Description
+------------
+```
+python model_summary.py
+```
+-----------

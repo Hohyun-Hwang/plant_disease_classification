@@ -9,12 +9,18 @@ JuHee Han : fgtr153@ds.seoultech.ac.kr
 
 For Plant Diseases Classification , We use data from https://www.kaggle.com/vipoooool/new-plant-diseases-dataset
 
-We used two datasets, a small dataset consisting only of apple disease, and the entire dataset did not name it separately. 
-If you want to train or demo on small dataset, use 
+We used two datasets, a small dataset consisting only of apple disease, and the entire dataset did not name it separately. And we compared the performance of the three models of plant disease classification. CNN Model is based on LeNet5, and other models is supposed by torch or other package(efficientnet is not supposed by pytorch official).
+
+If you want to train or demo on small dataset, try
 ```
 small_main.py, small_model.py, small_dataloader.py
 ```
 
+If you want to use all dataset, try
+
+```
+main.py, model.py, dataloader.py
+```
 ## How to Use
 -----------------
 ```

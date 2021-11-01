@@ -4,7 +4,7 @@
 
 ** Contributor    
 JongHwan Park : bomebug15@ds.seoultech.ac.kr    
-HoHyeun Hwang : hhhwang94@naver.com       
+HoHyun Hwang : hhhwang94@ds.seoultech.ac.kr       
 JuHee Han : fgtr153@ds.seoultech.ac.kr    
 
 For Plant Diseases Classification , We use data from https://www.kaggle.com/vipoooool/new-plant-diseases-dataset    
